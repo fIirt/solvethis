@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello Kitty</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        var gameFinished = true; // Declare gameFinished as a global variable
+    </script>
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="background"></div>
+        <div id="character"></div>
+        <div id="dialogue-box">
+            <p id="dialogue-text"></p>
+        </div>
+    </div>
+
+    <!-- Wordle Container -->
+    <div id="wordle-container" style="display: none;">
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="styles.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+            <title>Wordle Clone</title>
+        </head>
+
+        <body>
+            <div class="wrapper">
+                <h1>Wordle</h1>
+                <div class="board">
+                    <div class="row" id="row1">
+                        <div class="box" id="1"></div>
+                        <div class="box" id="2"></div>
+                        <div class="box" id="3"></div>
+                        <div class="box" id="4"></div>
+                        <div class="box" id="5"></div>
+                    </div>
+                    <div class="row" id="row2">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="row" id="row3">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="row" id="row4">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="row" id="row5">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="row" id="row6">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+
+                <div class="keyboard">
+                    <div class="keyrow keyrow1">
+                        <div class="letterKey">Q</div>
+                        <div class="letterKey">W</div>
+                        <div class="letterKey">E</div>
+                        <div class="letterKey">R</div>
+                        <div class="letterKey">T</div>
+                        <div class="letterKey">Y</div>
+                        <div class="letterKey">U</div>
+                        <div class="letterKey">I</div>
+                        <div class="letterKey">O</div>
+                        <div class="letterKey">P</div>
+                    </div>
+                    <div class="keyrow keyrow2">
+                        <div class="letterKey">A</div>
+                        <div class="letterKey">S</div>
+                        <div class="letterKey">D</div>
+                        <div class="letterKey">F</div>
+                        <div class="letterKey">G</div>
+                        <div class="letterKey">H</div>
+                        <div class="letterKey">J</div>
+                        <div class="letterKey">K</div>
+                        <div class="letterKey">L</div>
+                    </div>
+                    <div class="keyrow keyrow3">
+                        <div class="enterKey">ENTER</div>
+                        <div class="letterKey">Z</div>
+                        <div class="letterKey">X</div>
+                        <div class="letterKey">C</div>
+                        <div class="letterKey">V</div>
+                        <div class="letterKey">B</div>
+                        <div class="letterKey">N</div>
+                        <div class="letterKey">M</div>
+                        <div class="deleteKey">DELETE</div>
+                    </div>
+                </div>
+            </div>
+            <div id="post-game-content" style="display: none;">
+                <p>You're my</p>
+                <img src="https://cdn.discordapp.com/attachments/614217380121280547/1201263126792904796/New_Project.png" alt="Heart">
+                <p>they say we're born with one heart<br>so we can find our other half</p>
+                <br>
+                <p>You make me whole,<br>
+                   You're my soul<br>
+                   You're my favorite person<br>
+                   You're my favorite color<br>
+                   You're everything I find beautiful</p>
+            </div>
+        </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="module" src="javascript.js"></script>
+            <script type="module" src="wordbank.js"></script>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
